@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--禁止百度的转码显示-->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--WebApp全屏模式   隐藏地址栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=no">
+    <!--<meta name="viewport"-->
+    <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <title>鹰眼鉴房，理性决策，质选优房，一站解决购房忧虑</title>
+    <meta name="keywords" content="鹰眼鉴房，鹰眼，新房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据，全景，工地监控，鹰眼测评，开放工地" />
+    <meta name="description" content="鹰眼鉴房，国内首家专注于楼盘质量的房产数据信息服务平台，在全方位房产质量大数据支持下，协助更多购房人更加轻松、便捷地甄选优质房产。" />
+    <meta id='rem' name="copyright" content="北京买家帮网络信息有限公司">
+    <!--<link rel="bookmark" type="image/x-icon" href="images/favicon.ico"/>-->
+    <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+    <!--<link rel="icon" href="images/favicon.ico">-->
+    <!--<link rel="shortcut icon" href="images/favicon.ico" />-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/build.min.css">
+    <!--<link rel="stylesheet" href="webGl/TemplateData/style.css">-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body style="position: relative;height: auto;overflow: hidden">
+    <article style="height:0;overflow: hidden;">
+        <p>鹰眼鉴房，鹰眼，新房，二手房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据</p>
+        <figure>
+            <img src="http://activity.cun-tu.cn/YYJF-2019-5-23-36-YYJF-small.png" title="鹰眼鉴房,鹰眼鉴房，鹰眼，新房，二手房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据" alt="鹰眼鉴房,鹰眼鉴房，鹰眼，新房，二手房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据">
+            <figcaption>鹰眼鉴房,鹰眼鉴房，鹰眼，新房，二手房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据</figcaption>
+        </figure>
+        <p>鹰眼鉴房，鹰眼，新房，二手房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据</p>
+        <figure>
+            <img src="http://activity.cun-tu.cn/YYJF-2019-5-23-36-YYJF-big.png" title="鹰眼鉴房,鹰眼鉴房，鹰眼，新房，二手房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据" alt="鹰眼鉴房,鹰眼鉴房，鹰眼，新房，二手房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据">
+            <figcaption>鹰眼鉴房,鹰眼鉴房，鹰眼，新房，二手房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据</figcaption>
+        </figure>
+        <p>鹰眼鉴房，鹰眼，新房，二手房，房产质量，房产数据服务平台，专注楼盘质量，房产大数据</p>
+    </article>
+    <!--<div id="webGl" style="width: 100%;height: 100vh">-->
+    <!-- //activity.cun-tu.cn/heilogo.png -->
+    <!--</div>-->
+    <div class="preventTran">
+        <div class="child_preventTran">
+            <div class="img_preventTran">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABaCAYAAADkUTU1AAAI9ElEQVR4Xu1cfXBcVRU/5+Z1N8GEj2AhFQvUIigfBetYaRVbBhADU2wHVoYk3bx3k8kMcSyFPxzUf8IfOjrqIHYUXbL3vW6mKXbtINapg1ColLEUnYIj9QPGOE0VdUjjlE3tdnffO87J7GY26yZ9H5tNst37X5tzzu/87rl777v3nnMR5rhFo9HLhBDrhRC3AMBqAFgBABfmYU8CwAgAHAGAVwDgJaXUO+Vc6u7uXhkOh0/GYrGxIC5jEOVZdLG3t7fdcZyHiOgORHSL4xDRfiHEE/F4fB8AEGNIKdcS0fMA8IxpmluC+OzWEdcY0Wh0jaZp2wFgjWulMoJE9CoRbRVCEHcCIp4PAOOpVOqSZDJp+7VdMcIbNmzQVqxYMYCIXwEA4dehEj2O+GlEfF/h/xFxfTwef9mv/YoQ7u/vb06n00kA+FypIxweAHgdAJ4DgF9nMpmj4+Pj77Jca2vr0nA4fC0ArAeAO4lotYvh/22l1JfnjXAkEmluaWn5JQB8ukx09hLRgGVZb7hxUNf1m4QQjxHRxlmI/0kpxZ3kqwWNMEopfwIAkRL0fwNAn1Lq51696ujouKKxsfEwAFw6k246nV45PDzMs7vnFoiwlPIRAPhuCeqbjuPcYVnWv7x609nZ+cFwOMzL0xVn0d2qlOKJ0XPzTZjXxYaGhqMAEC5C/aOmaetisRivr55aV1fXsiVLlhxExJVnU+QlyjTNz55NrtzffROWUj4DAJuKjI4j4up4PH7MjyOGYTyNiPe70SWiDCK+XymVciNfLOOLcDQaXaVpGk9EU/qO40Qtyxry6kBB3jCMpUQUEUJsIKIbEPEqANBmsseypmn+1CueL8JSyh8AQH8BjIiOmKb5ca/gs8l3dnae39jYeJfjODxjXw8APNSn1mMiUqZp9njF9EXYMIw3EfG6IsKbTNN81iu4F/mBgQExOjq6DgA2A8AnAeC3SqmHvdhgWb+E/4mIbXkwO5VKXZxMJj1PVF6drYS8X8IPI+K3AKCBiLabprmtEs5Uw4YvwuyYrusXnjlzRtu1a1eg7Vo1SAaepavtZCXxfEe4kk5U01adcDV7ez6w6hGej16vJmY9wtXs7fnAKhvhSCTS1NTUtFQIcZ5t2xUbBYjo+7TRbecIITKZTObk8PDwf8rpTCPT0dFxUTgc/ioA8Kdjg1uQhShHRG8T0bZTp069kEwmMwUfpwgbhnEtIv4GAC5YiAT8+sTEbdu+NZFI/GNqtxSJRFqbm5v/ioiFKxC/9heq3gki+qhpmu9ORrinp+cpIupdqN5WyK+fKaU2Y19f3wW5XO4Eb/XKGHYK9zteQIlIuDhQ92KyIrKO41yNhmF0IWLZsygi6jdN88mKoM2BEcMwHkTEH7o1TUSP8EH64wBQdgNfa4QBwCrcHHyhXC/VIOE9TJiPOu+tE+bZqsZ+wwBQj/C0kV2PsNv5v0pyXpel+pAuDUytDulfAMDd59KyVCdciPYiHdJj2Wx2zdDQ0N90Xf+wEILzRS7Kc5pch2spwg4iLo3H4+OFoEkpPwAAf8/flNYc4f1KqdtL5yMpJSfKfKqwLNVShA8rpW4uJdzT0/M6Ed1Uc4Q56w8RP6OU4ohOtu7u7tuEEM/nDyRqbkgzxywRDRLRbkTsRES9KDmmJgnP9mG7h494ONz/90NnrUW6LM1OWErJidd1wvUIV2nL5wXG7/awPqQX+bf0bIMkyd/S50yEiWi4Trh4PNTaOlyIMGfB3nMunHgQUYy/tL6RrzUqxzlJRFMf4l6WjErJIiJXajXPYG8NIm50izV5mabr+i1CCN+FT27BFoJcLpe7hi/EeeI6lE+6Xgh+zZUPu5VS909mAESj0as1TePqsfPmCm0+7RLRO7Ztr0okEiemklrypLlc7sr5dG4OsF8TQtwzODjIxWPTSwA4P6ulpYWrSh5DxE/MAXi1THKqBpcHfjOVSh0qrkadMelMStmSTqdbGxsbF1W+Vi6XOyOEOGFZVrpc71Ysy65aoQuKUycctAcXun49wgs9QkH9W5QR3rJly/VNTU0jsVjsv147YFERbm9vDy9btoxvA28koveI6POWZR3wQtoP4YLO5Bsb1Wy6rm8UQhSX2T+tlHrAiw+eCRuGsQcRbwOAo1xGK4T4VSaTeXFoaOiUF2A/slJKTpHkVMnJRkRPmqY5VdbrxqYfwuX2z1kA4Az0P/DzMgCwzzTN424c8CIjpdxd/MCC4zjbLMt6wosNz4R1Xb9ZCMHbydkaX+TxmzpcZ/xjpRSXzwdqfX19S3K5HG8ACrf5IIRYOzg4+KoXw54Jc+HysWPHuH74EpdA25VSW13Kziim6zqXy3OEC20slUq1eX2mxjNhRpNSmlxR64LEHk3THojFYjzkAzUp5e8AoLjs/kdKqQe9GvVLmNON+cGS2dpzjuNsmmnX4sVRXdc7hBA7i3R4hfiYUur3XuywrC/C/CBBOBzm93RC5QCJ6MWxsbGNe/fu9fxhUGovGo1e3tDQcAQRLy78jYieNU2z+EkN17x9Ec4P6xcAgJenaY2IDk5MTNyVTCYnXHsxgyB3bCgUehkRbywim7Ft+4ZEIvGWH/u+Ceu6/pAQ4ntlQF87ffr03UFL5Xt7ey+1bXsfP4ZSjOE4zqOWZfH7A76ab8JdXV1XhUKht2cY0qOO48gdO3bs9+OVYRh3AkAcES8r0edSHM7e5yMcX8034fyw/jMAXAMAXFNYehTETvFE83Wl1F/ceNfd3X2dEOJr+Sdqpj1CRkSHJyYmbg/6UwlE2DAMPuyLZLPZezVNiyFi6ZtazJOJ8+0F54Mdymazbx0/fnwyU2758uWtoVDoI7Ztr+WTRSJaW67eiSfBTCazeefOne+56bjZZAIRzhtmG8Q7mba2tu8AwBcrWKTFnfX4yMjIowcOHMgFJcv6lSA8zQ8p5a0AwJPZqiAOEtEb/AigZVkHg9gp1a04YQaIRCINzc3N9yHil4honYeIF4b/9/Pf374np5k6aU4IF4NJKT8EAO355E5+NelyACjcBvJ7WKMAwLusV3K53L5EIsH/nrP2PzAJNfmP9znfAAAAAElFTkSuQmCC" alt="">
+            </div>
+            <p>为了您的良好体验</p>
+            <p>请将手机/平板竖屏操作</p>
+        </div>
+    </div>
+    <div class="container-fluid m-container">
+        <div class="g-bg">
+            <div class="u-bg-title u-hide-phone">
+                <img src="./images/yidongduan_banner@2x.png" style="width: 100%" alt="">
+            </div>
+            <div class="u-bg-title u-hide-pc">
+                <img src="./images/banner.png" style="width: 100%" alt="">
+            </div>
+            <div class="u-bg-circle1">
+                <img src="./images/1@3x.png" class="img-fluid" alt="">
+            </div>
+            <div class="u-bg-circle2">
+                <img src="./images/2@3x.png" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        <div class="g-nav-link">
+            <div class="container g-nav-container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light g-nav">
+                    <span class="u-logo" style="position:relative">
+                    </span>
+                    <button class="navbar-toggler g-nav-btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="u-navbar-toggler">
+                            <img src="./images/menu@3x.png" alt="">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <nav id="collapsibleNavbar" class="navbar navbar-light bg-light navbar-fixed-top">
+                            <ul class="nav nav-pills u-nav-list">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#homes">首页</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#server">产品服务</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#newscenter">新闻资讯</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#download">下载</a>
+                                    <div class="u-rq-code">
+                                        <img src="./images/qr.png" class="img-fluid" alt="">
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://open.homehawkeye.com">鹰眼工程</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="main-body" id="homes">
+            <div class="container g-title-content">
+                <h1 class="u-hide-pc">您身边的房屋质量专家</h1>
+                <div class="u-hide-phone">
+                    <h1>您身边的</h1>
+                    <h1>房屋质量专家</h1>
+                </div>
+                <p>助力降低购房风险，我们比您更关心您的居住质量。</p>
+                <div class="u-load-btn">
+                    <span>立即下载</span>
+                    <div class="u-rq-code-2">
+                        <img src="./images/qr.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container g-img-content-list">
+                <div class="card-deck">
+                    <div class="card card-img">
+                        <img class="card-img-top img-fluid" src="./images/1img@3x.png" alt="Card image cap">
+                        <div class="card-body card-content">
+                            <h5 class="card-title card-title-h5">720° 全景航拍实景还原</h5>
+                            <p class="card-text card-title-p">室外无人机航拍全景楼盘进度，实景视频展示建筑实况</p>
+                        </div>
+                    </div>
+                    <div class="card card-img card-img2">
+                        <img class="card-img-top img-fluid" src="./images/2img@3x.png" alt="Card image cap">
+                        <div class="card-body card-content">
+                            <h5 class="card-title card-title-h5">过程进度全把握</h5>
+                            <p class="card-text card-title-p">实景跟进楼盘整改进度，厘米级精准还原室内空间</p>
+                        </div>
+                    </div>
+                    <div class="card card-img">
+                        <img class="card-img-top img-fluid" src="./images/3img@3x.png" alt="Card image cap">
+                        <div class="card-body card-content">
+                            <h5 class="card-title card-title-h5">施工质量全透明</h5>
+                            <p class="card-text card-title-p">定期更新实际建筑进度，可追踪千余项工程质量监控点</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container g-video">
+                <h1 class="u-tit-h1">一分钟了解鹰眼鉴房</h1>
+                <div class="u-video-container">
+                    <span id="play-icon" class="video-icon" style="display:block">
+                        <img class="img-fluid" src="./images/play.png" alt="">
+                    </span>
+                    <span id="paste-icon" class="video-icon">
+                        <img class="img-fluid" src="./images/pause.png" alt=""></span>
+                    <div id="video_pease"></div>
+                    <video id="videoPlay" width="100%" height="100%" poster="./images/fm.png" controls controlslist="nodownload" preload>
+                        <source src="http://mjbweb.homehawkeye.com/yyjf_gq.mp4" type="video/mp4" />
+                        Your browser does not support HTML5 video.
+                        (您的浏览器不支持html5的video标签 )
+                    </video>
+                </div>
+            </div>
+            <div class="container g-artifact-list">
+                <h1 class="u-tit-h1">业主必备神器 了解新居更放心</h1>
+                <div class="card-deck g-artifact-deck">
+                    <div class="card text-center u-artifact-li" style="width: 200px">
+                        <div class="u-artifact-img">
+                            <img class="card-img-top img-fluid" src="./images//icon_gongzhengtouming@3x.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">覆盖全国近千楼盘</h5>
+                            <pre class="card-text">已服务全国多个一二线城市</pre>
+                            <pre> 为数万名业主提供服务</pre>
+                        </div>
+                    </div>
+                    <div class="card text-center u-artifact-li">
+                        <div class="u-artifact-img">
+                            <img class="card-img-top img-fluid" src="./images/icon_gongzhengtouming copy 6@3x.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">便捷自助验房</h5>
+                            <pre class="card-text">量化验房检查项</pre>
+                            <pre>自助操作标准验收流程</pre>
+                        </div>
+                    </div>
+                    <div class="card text-center u-artifact-li">
+                        <div class="u-artifact-img">
+                            <img class="card-img-top img-fluid" src="./images//Group 13@3x.png" alt="Card image cap">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">楼盘资质查询</h5>
+                            <pre class="card-text">置业必备工具</pre>
+                            <pre>五证一书信息全掌握</pre>
+                        </div>
+
+                    </div>
+                    <div class="card text-center u-artifact-li">
+                        <div class="u-artifact-img">
+                            <img class="card-img-top img-fluid" src="./images//Group 34@3x.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body" id="server">
+                            <h5 class="card-title">实用房屋资讯</h5>
+                            <pre class="card-text">买房前后必备知识</pre>
+                            <pre>实用干货一网打尽</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="width:100%">
+                <div class="g-monitor-server">
+
+                    <h1 class="u-tit-h1">金牌质量监控服务</h1>
+                    <div class="u-monitor-server-animation clearfix">
+                        <div class="u-phone">
+                            <img src="./images/phone-1_2.gif" class="img-fluid" alt="">
+                        </div>
+                        <div class="u-line">
+                            <img src="./images/Group 14@3x(1).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="u-monitor-server-list">
+                            <!-- <div class="u-monitor-server-li"></div> -->
+                            <div class="card u-monitor-server-li">
+
+                                <div class="u-monitor-server-img">
+                                    <img class="card-img-top img-fluid" src="./images/hp@3x.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">开放工地细节</h5>
+                                    <pre class="card-text">数百个工程建设阶段呈现</pre>
+                                    <pre>以前你看不到的细节都在这里</pre>
+                                </div>
+
+                            </div>
+                            <div class="card u-monitor-server-li">
+
+                                <div class="u-monitor-server-img">
+                                    <img class="card-img-top img-fluid" src="./images/fwzl@3x.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">全景工地监控</h5>
+                                    <pre class="card-text">720度VR全景实况体验</pre>
+                                    <pre>多角度实景呈现工地现场</pre>
+                                </div>
+
+                            </div>
+                            <div class="card u-monitor-server-li">
+
+                                <div class="u-monitor-server-img">
+                                    <img class="card-img-top img-fluid" src="./images/zjpc.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">专家评测报告</h5>
+                                    <pre class="card-text">专业的数据解读、细节剖析</pre>
+                                    <pre>楼盘质量疑问现在一目了然</pre>
+                                </div>
+
+                            </div>
+                            <div class="card u-monitor-server-li">
+
+                                <div class="u-monitor-server-img">
+                                    <img class="card-img-top img-fluid" src="./images/yzq.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">业主圈在线交流</h5>
+                                    <pre class="card-text">质量问题随意说</pre>
+                                    <pre>真正属于业主的业主圈</pre>
+                                </div>
+
+                            </div>
+                            <div class="card u-monitor-server-li">
+
+                                <div class="u-monitor-server-img">
+                                    <img class="card-img-top img-fluid" src="./images/jzdh@3x.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">楼盘综合动态评分</h5>
+                                    <pre class="card-text">根据五个维度和施工周期定期追踪评测</pre>
+                                    <pre>全面客观反映楼盘现状</pre>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container g-sir-banner" id="newscenter">
+                <div id="carouselExampleIndicators" class="carousel slide g-carouselExampleIndicators" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner g-carousel-inner">
+                        <div class="carousel-item active g-banner-item">
+                            <div class="g-banner-item-inner clearfix">
+                                <div class="g-banner-item-inner-img">
+                                    <img style="width: 100%" src="./images/zhao2@3x.png" alt="">
+                                </div>
+                                <div class="g-banner-item-inner-text">
+                                    <h2>赵先生</h2>
+                                    <div class="g-banner-item-inner-icon">
+                                        <span>郑州业主</span>
+                                        <span>老师</span>
+                                    </div>
+                                    <p>
+                                        买房后，一直等着交房，所有关于房子的情况都是微信群里传出来的，有真有假，无意中发现了鹰眼鉴房这个软件，可以登录定期查看进度，完工情况心理多少有点底，进不去工地就能看到楼内的施工情况，而且每张照片都有说明，质量心理有谱多了。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item g-banner-item">
+                            <div class="g-banner-item-inner clearfix">
+                                <div class="g-banner-item-inner-img">
+                                    <img class="img-fluid" src="./images/z@3x.png" alt="">
+                                </div>
+                                <div class="g-banner-item-inner-text">
+                                    <h2>朱先生</h2>
+                                    <div class="g-banner-item-inner-icon">
+                                        <span>郑州业主</span>
+                                        <span>网店店主</span>
+                                    </div>
+                                    <p>在论坛发现有人提到这个app，安装后，不光可以看到新家的情况，还有业主圈可以和人聊天，讨论房子的情况，简直太方便了。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item g-banner-item">
+                            <div class="g-banner-item-inner clearfix">
+                                <div class="g-banner-item-inner-img">
+                                    <img class="img-fluid" src="./images/g@3x.png" alt="">
+                                </div>
+                                <div class="g-banner-item-inner-text">
+                                    <h2>高小姐</h2>
+                                    <div class="g-banner-item-inner-icon">
+                                        <span>郑州业主</span>
+                                        <span>设计师</span>
+                                    </div>
+                                    <p>
+                                        被微信群里面的人安利了这款软件，开通了质量监控，每月都有定期的报告，报告里面关于建设进度，施工质量都有详细描述，自己买的房子的施工情况直接就能看到，还有整改记录，之前的质量问题有没有解决都展示出来了，已经推荐给朋友了。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container g-firm-state">
+                <h1 class="u-tit-h1">企业动态</h1>
+                <div class="row g-firm-state-item">
+                    <a target="_blank" href="http://www.xinhuanet.com/tech/2018-12/14/c_1123855641.htm" class="col-12 col-sm-12 col-ms-12 col-lg-6 g-firm-state-item-li">
+                        <p>打造数字化智慧开放工地，鹰眼鉴房发布工程数据开放平台</p>
+                        <div class="u-firm-state-date clearfix">
+                            <span class="icon1">新华网</span>
+                            <span class="icon2">2018-12-14</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="http://www.lieyunwang.com/archives/443394" class="col-12 col-sm-12 col-ms-12 col-lg-6 g-firm-state-item-li">
+                        <p>用技术手段打破售房预售制度下的信息不对等，鹰眼鉴房要让业主参与到施工建设中来</p>
+                        <div class="u-firm-state-date clearfix">
+                            <span class="icon1">猎云网</span>
+                            <span class="icon2">2018-5-30</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://36kr.com/p/5137845.html" class="col-12 col-sm-12 col-ms-12 col-lg-6 g-firm-state-item-li">
+                        <p>「鹰眼鉴房」：专注房屋工程质量，做房产质量数据信息服务平台</p>
+                        <div class="u-firm-state-date clearfix">
+                            <span class="icon1">36kr</span>
+                            <span class="icon2">2018-6-11</span>
+                        </div>
+                    </a>
+
+                    <a target="_blank" href="http://news.dichan.sina.com.cn/2018/06/12/1212013.html" class="col-12 col-sm-12 col-ms-12 col-lg-6 g-firm-state-item-li">
+                        <p>期房预售问题频现，鹰眼鉴房用技术手段打破建筑管理的信息不对等</p>
+                        <div class="u-firm-state-date clearfix">
+                            <span class="icon1">新浪房产</span>
+                            <span class="icon2">2018-6-11</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://mp.weixin.qq.com/s/4DgEPq_fSnX-GUB2WkjaCw" class="col-12 col-sm-12 col-ms-12 col-lg-6 g-firm-state-item-li">
+                        <p>质量315 I 郑州楼盘大曝光，你家上榜了吗？</p>
+                        <div class="u-firm-state-date clearfix">
+                            <span class="icon1">微信</span>
+                            <span class="icon2">2019-3-15</span>
+                        </div>
+                    </a>
+
+                    <a target="_blank" href="https://zhuanlan.zhihu.com/p/41562838" class="col-12 col-sm-12 col-ms-12 col-lg-6 g-firm-state-item-li">
+                        <p>重磅！“720°全景”已上线，真实楼盘尽收眼底！</p>
+                        <div class="u-firm-state-date clearfix">
+                            <span class="icon1">知乎</span>
+                            <span class="icon2">2018-4-28</span>
+                        </div>
+                    </a>
+
+                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI1NDg3OTA4Nw==&mid=2247484194&idx=4&sn=b68ad2c5f652d1da3a1d0bc9e121ff01&chksm=ea3f3722dd48be346e849f946b9574ce047c092ead18ffa9fc690a3617fd909396c5a9cdada8#rd" class="col-12 col-sm-12 col-ms-12 col-lg-6 g-firm-state-item-li">
+                        <p>鹰眼鉴房业主圈群聊功能正式上线</p>
+                        <div class="u-firm-state-date clearfix">
+                            <span class="icon1">微信</span>
+                            <span class="icon2">2018-6-11</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://mp.weixin.qq.com/s/BBR3LfdNBgE_cs2mCpKotQ" class="col-12 col-sm-12 col-ms-12 col-lg-6 g-firm-state-item-li">
+                        <p>开发商说10分到高铁，实际开车30分！有了这个神器，休想再骗我！</p>
+                        <div class="u-firm-state-date clearfix">
+                            <span class="icon1">微信</span>
+                            <span class="icon2">2019-4-23</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <footer>
+                <div class="g-footer">
+                    <div class="g-foot-content">
+                        <div class="logo">
+                            <img class="img-fluid" src="./images/hblogo.png" alt="">
+                        </div>
+                        <div class="telMe">
+                            <div class="telme-qr"></div>
+                            <div>
+                                <h3>联系我们</h3>
+                                <p>商务合作：bd@maijiahome.com</p>
+                                <p>客服微信：yyjf101</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="u-brand">Copyright © 2019 北京买家帮网络信息有限公司 版权所有 - 京ICP备17059265号-1&nbsp;<a class="u-privacy" href="components/privacyPolicy.html">隐私政策</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./vendor/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="./vendor/ckplayer.min.js"></script> -->
+    <!--<script src="./js/nav.min.js"></script>-->
+    <!--<script src="./js/video.min.js"></script>-->
+    <script src="./js/build.min.js"></script>
+    <!--测试WEBGL-->
+    <!--<script src="webGl/TemplateData/UnityProgress.js"></script>-->
+    <!--<script src="webGl/Build/UnityLoader.js"></script>-->
+
+    <script>
+        $(function() {
+            //        window.location = 'com.maijiaHome.MyHawkEyeApp://';
+            //        $('#webGl').load('./webGl/index.html', function () {
+            //            alert('加载完成');
+            //        })
+
+            $('body')
+                .scrollspy({
+                    target: '#collapsibleNavbar'
+                });
+
+            $("[href='#homes']")
+                .click();
+            $('.carousel')
+                .carousel({
+                    interval: 3000,
+                }); {
+                var qr2 = $('.u-rq-code-2');
+                $('.u-load-btn')
+                    .unbind()
+                    .bind('click', function() {
+                        qr2.fadeToggle("slow");
+                    });
+            }
+            $("#videoPlay").bind("contextmenu", function() { //取消右键事件
+                return false;
+            });
+            $('#videoPlay')
+                .bind('pause', function() {
+                    $('#paste-icon')
+                        .css('display', 'none');
+                    $('#play-icon')
+                        .css('display', 'block');
+                });
+            $('#videoPlay')
+                .bind('play', function() {
+                    $('#paste-icon')
+                        .css('display', 'none');
+                    $('#play-icon')
+                        .css('display', 'none');
+                });
+            $('#play-icon')
+                .bind('click', function() {
+                    $('#video_pease').css('display', 'none');
+                    $('.u-video-container').css('padding', '20px');
+                    $('#videoPlay').css('display', 'block');
+                    $('#videoPlay')
+                        .trigger('play');
+                });
+
+            $('#paste-icon')
+                .bind('click', function() {
+                    $('#videoPlay')
+                        .trigger('pause');
+                });
+            $('#videoPlay')
+                .bind('ended', function() {
+                    this.src = "http://mjbweb.homehawkeye.com/yyjf_gq.mp4";
+                });
+
+            var startX, endX; //声明触摸的两个变量
+            var offset = 30; //声明触摸距离的变量
+            $('.carousel-inner')
+                .on('touchstart', function(e) {
+                    startX = e.originalEvent.touches[0].clientX; //当触摸开始时的x坐标；
+                });
+            $('.carousel-inner')
+                .on('touchmove', function(e) {
+                    endX = e.originalEvent.touches[0].clientX; //当触摸离开时的x坐标；
+                });
+            $('.carousel-inner')
+                .on('touchend', function(e) {
+                    //当触摸完成时进行的事件；
+                    var distance = Math.abs(startX - endX); //不论正负，取值为正值；
+                    if (distance > offset) {
+                        if (startX > endX) {
+                            $('#carouselExampleIndicators')
+                                .carousel(
+                                    'next'); //当开始的坐标大于结束的坐标时，滑动到下一附图
+                        } else {
+                            $('#carouselExampleIndicators')
+                                .carousel(
+                                    'prev'); //当开始的坐标小于结束的坐标时，滑动到上一附图
+                        }
+                    }
+                });
+        })
+    </script>
+</body>
+
+</html>
