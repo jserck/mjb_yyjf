@@ -18,7 +18,7 @@
     "browser-sync": "^2.24.6",
     "clone": "^2.1.1",
     "cloneable-readable": "^1.1.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-babel": "^7.0.1",
     "gulp-changed": "^3.2.0",
